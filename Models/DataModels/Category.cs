@@ -3,11 +3,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace UniversityAPI.Models.DataModels
 {
-    public class Categoria : BaseEntity
+    public class Category : BaseEntity
     {
         [Required]
         public string Name { get; set; } = string.Empty;
         [Required]
-        public List<Curso> Cursos { get; set; } = new List<Curso>();
+        public List<Course> Cursos { get; set; } = new List<Course>();
     }
 }

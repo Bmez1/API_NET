@@ -12,8 +12,8 @@ using UniversityAPI.Database;
 namespace UniversityAPI.Migrations
 {
     [DbContext(typeof(UniversityDBContext))]
-    [Migration("20220721184127_Iniciando el esquema de la base de datos")]
-    partial class Iniciandoelesquemadelabasededatos
+    [Migration("20220726020858_Creando la base de datos")]
+    partial class Creandolabasededatos
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -173,6 +173,9 @@ namespace UniversityAPI.Migrations
 
                     b.Property<DateTime?>("DeleteDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<int>("Edad")
+                        .HasColumnType("int");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");

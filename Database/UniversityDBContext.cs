@@ -12,8 +12,8 @@ namespace UniversityAPI.Database
 
         // Agregando las tablas
         public DbSet<User>? Users  { get; set; }
-        public DbSet<Curso>? Cursos { get; set; }
-        public DbSet<Categoria>? Categorias { get; set; }
-        public DbSet<Estudiante>? Estudiantes { get; set; }
+        public DbSet<Course>? Cursos { get; set; }
+        public DbSet<Category>? Categorias { get; set; }
+        public DbSet<Student>? Estudiantes { get; set; }
     }
 }

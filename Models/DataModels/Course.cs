@@ -6,7 +6,7 @@ namespace UniversityAPI.Models.DataModels
     {
         Básico, Intermedio, Avanzado
     }
-    public class Curso : BaseEntity
+    public class Course : BaseEntity
     {
         [Required]
         public string Nombre { get; set; } = string.Empty;
@@ -15,8 +15,8 @@ namespace UniversityAPI.Models.DataModels
         public string DescripcionLarga { get; set; } = string.Empty;
         public Nivel Nivel { get; set; } = Nivel.Básico;
         [Required]
-        public List<Categoria> Categorias { get; set; } = new List<Categoria>();
+        public List<Category> Categorias { get; set; } = new List<Category>();
         [Required]
-        public List<Estudiante> Estudiantes { get; set; } = new List<Estudiante>();
+        public List<Student> Estudiantes { get; set; } = new List<Student>();
     }
 }
